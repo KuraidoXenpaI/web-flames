@@ -58,6 +58,13 @@ button {
     padding: 7px 15px;
     font-size: 15px;
     text-align: center;
+    box-shadow: none;
+}
+
+button:hover {
+    border-color: #b7d3f7;
+    color: #b7d3f7;
+
 }
 
 .result {
