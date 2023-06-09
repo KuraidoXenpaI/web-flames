@@ -34,6 +34,7 @@ div.titleRect {
 
 .result {
     color: white;
+    font-weight: bold;
 }
 
 .n1 {
@@ -57,6 +58,7 @@ button {
     color: white;
     padding: 7px 15px;
     font-size: 15px;
+    font-weight: bold;
     text-align: center;
     box-shadow: none;
 }

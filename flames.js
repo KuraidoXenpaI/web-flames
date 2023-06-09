@@ -1,14 +1,13 @@
 function calcResult() {
     let n1 = document.getElementById('n1').value;
     let n2 = document.getElementById('n2').value;
+    n1 = n1.toLowerCase();
+    n2 = n2.toLowerCase();
 
     let alphabet = ' abcdefghijklmnopqrstuvwxyz';
     let flames = ['Soulmates', 'Friends', 'Lovers', 'Acquintance', 'Marriage', 'Enemies'];
 
     let result = 0;
-
-    n1 = n1.toLowerCase();
-    n2 = n2.toLowerCase();
 
     if (n1.trim() === '') {
         alert('Please fill the entries!');
