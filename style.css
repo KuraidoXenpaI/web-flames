@@ -15,12 +15,13 @@ body {
 }
 
 .wrapper {
-    margin-top: 280px;
-    height: 800px;
-    width: 1200px;
+    margin-top: 240px;
+    height: 600px;
+    width: 1000px;
     background-color: #f6ae94;
     display: flex;
     border-radius: 30px;
+    margin-bottom: 280px;
 }
 
 .result-wrapper {
@@ -47,7 +48,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 98px;
+    font-size: 78px;
     font-weight: bold;
     color: black;
     text-shadow: 1px 2px 3px #f6ae94;
@@ -62,18 +63,28 @@ body {
 
 .form-wrapper input {
     background-color: blanchedalmond;
-    padding: 20px 30px;
+    padding: 10px 20px;
     border-radius: 25px;
-    margin: 20px 0px 0px 90px;
-    font-size: 30px;
+    margin: 20px 0px 0px 120px;
+    font-size: 20px;
+    border: none;
+}
+
+.form-wrapper input:hover {
+    background-color: rgb(253, 214, 155);
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 20px 0px 0px 120px;
+    font-size: 20px;
+    border: none;
 }
 
 .form-wrapper button {
     background-color: #f57749;
-    padding: 30px 50px;
-    font-size: 30px;
+    padding: 20px 40px;
+    font-size: 20px;
     border-radius: 80px;
-    margin: 20px 0px 0px 32.5%;
+    margin: 20px 0px 0px 35%;
     font-weight: bolder;
     border-color: #f57749;
     border-width: 5px;
@@ -81,10 +92,10 @@ body {
 
 .form-wrapper button:hover {
     background-color: #fe632b;
-    padding: 30px 50px;
-    font-size: 30px;
+    padding: 20px 40px;
+    font-size: 20px;
     border-radius: 80px;
-    margin: 20px 0px 0px 32.5%;
+    margin: 20px 0px 0px 35%;
     font-weight: bolder;
     border-color: #f74e11;
 }
@@ -95,6 +106,6 @@ body {
     background-color: rgba(255, 255, 255, 0); 
     text-align: center;
     margin-top: 90px;
-    font-size: 70px;
+    font-size: 50px;
     text-shadow: 1px 2px 3px #ff7746;
 }

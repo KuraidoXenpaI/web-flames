@@ -13,7 +13,7 @@ function getResult() {
 
         alert("Please fill the entries");
 
-    } else if (n1.trim() == '') {
+    } else if (n2.trim() == '') {
 
         alert("Please fill the entries");
 
@@ -29,21 +29,21 @@ function getResult() {
 
         result %= 6;
 
-    }
+        document.getElementById("res").innerHTML = flames[result];
+        if (flames[result] === "Soulmates") {
+            document.getElementById("resImg").setAttribute("src", "src/Soulmates.png");
+        } else if (flames[result] === "Friends") {
+            document.getElementById("resImg").setAttribute("src", "src/Friends.png");
+        } else if (flames[result] === "Lovers") {
+            document.getElementById("resImg").setAttribute("src", "src/Lovers.png");
+        } else if (flames[result] === "Acquintance") {
+            document.getElementById("resImg").setAttribute("src", "src/Acquintance.png");
+        } else if (flames[result] === "Married") {
+            document.getElementById("resImg").setAttribute("src", "src/Married.png");
+        } else if (flames[result] === "Enemies") {
+            document.getElementById("resImg").setAttribute("src", "src/Enemies.png");
+        }
 
-    document.getElementById("res").innerHTML = flames[result];
-    if (flames[result] === "Soulmates") {
-        document.getElementById("resImg").setAttribute("src", "src/Soulmates.png");
-    } else if (flames[result] === "Friends") {
-        document.getElementById("resImg").setAttribute("src", "src/Friends.png");
-    } else if (flames[result] === "Lovers") {
-        document.getElementById("resImg").setAttribute("src", "src/Lovers.png");
-    } else if (flames[result] === "Acquintance") {
-        document.getElementById("resImg").setAttribute("src", "src/Acquintance.png");
-    } else if (flames[result] === "Married") {
-        document.getElementById("resImg").setAttribute("src", "src/Married.png");
-    } else if (flames[result] === "Enemies") {
-        document.getElementById("resImg").setAttribute("src", "src/Enemies.png");
     }
 
 }
