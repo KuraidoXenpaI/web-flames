@@ -12,27 +12,36 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
 }
 
 .wrapper {
-    margin-top: 120px;
     height: 600px;
     width: 1000px;
     background-color: #f6ae94;
     display: flex;
-    border-radius: 30px;
-    margin-bottom: 120px;
+    border-radius: 0.75rem;
+    padding: 2rem
+}
+.img-wrapper {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
+
 .result-wrapper {
-    margin: 20px 20px 20px auto;
     background-color: #f6ae94;
+    display: flex;
     justify-content: center;
     position: relative;
+    width: 100%;
 }
 
 .result-wrapper img {
-    margin-top: 50px;
     width: 100%;
     height: auto;
     background-color: #f6ae94;
@@ -56,27 +65,27 @@ body {
 }
 
 .form-wrapper {
-    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f6ae94;
-    width: 580px;
+    width: 100%;
 }
 
 .form-wrapper input {
     background-color: blanchedalmond;
     padding: 10px 20px;
     border-radius: 25px;
-    margin: 20px 0px 0px 120px;
     font-size: 20px;
     border: none;
+    transition-duration: 0.3s;
 }
 
 .form-wrapper input:hover {
     background-color: rgb(253, 214, 155);
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 20px 0px 0px 120px;
     font-size: 20px;
     border: none;
+    transition-duration: 0.3s;
 }
 
 .form-wrapper button {
@@ -84,10 +93,11 @@ body {
     padding: 20px 40px;
     font-size: 20px;
     border-radius: 80px;
-    margin: 20px 0px 0px 35%;
+    /* margin: 20px 0px 0px 35%; */
     font-weight: bolder;
     border-color: #f57749;
     border-width: 5px;
+    transition-duration: 0.3s;
 }
 
 .form-wrapper button:hover {
@@ -95,9 +105,19 @@ body {
     padding: 20px 40px;
     font-size: 20px;
     border-radius: 80px;
-    margin: 20px 0px 0px 35%;
+    /* margin: 20px 0px 0px 35%; */
     font-weight: bolder;
     border-color: #f74e11;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.input-wrapper {
+    background-color: transparent;
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 
@@ -105,7 +125,87 @@ body {
     font-family: 'Rock Salt', cursive;
     background-color: rgba(255, 255, 255, 0); 
     text-align: center;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     font-size: 50px;
     text-shadow: 1px 2px 3px #ff7746;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    html {
+        background-color: #f6ae94;
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+        background-color: #f6ae94;
+    }
+
+    .wrapper {
+        background-color: #f6ae94;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .result-wrapper {
+        display: flex;
+        background-color: #f6ae94;
+        align-items: center;
+    }
+
+    .result-wrapper h1 {
+        font-size: 50px;
+    }
+
+    .result-img {
+        margin: 0px 0px 0px 0px;
+        width: 280px;
+        height: auto;
+    }
+
+    .img-wrapper {
+        width: 60%;
+    }
+
+    .form-wrapper button {
+        margin: 0px 0px 0px 0px;
+        border: none
+    }
+
+    .form-wrapper input {
+        background-color: blanchedalmond;
+        padding: 10px 20px;
+        border-radius: 25px;
+        margin: 0px 0px 10px 0px;
+        font-size: 20px;
+        border: none;
+    }
+
+    .form-wrapper {
+        display: flexbox;
+        height: 100vw;
+        width: 100vw;
+        margin-top: -40px;
+        background-color: #f6ae94;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .input-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .input-wrapper button {
+        color: black;
+    }
+    
 }
